@@ -1,0 +1,146 @@
+@green: #68b738;
+@darkgreen: #5eaa2f;
+@lightgrey: #f2f2f2;
+@grey: #444444;
+@black: #000000;
+@white: #ffffff;
+@dashed: 1px dashed red;
+@font-color: #111111;
+
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Oswaldlight.woff") format("woff"), url("../fonts/Oswaldlight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: lighter;
+  font-style: italic;
+  font-display: swap;
+
+  src: url("../fonts/Oswaldlightitalic.woff") format("woff"), url("../fonts/Oswaldlightitalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Oswaldregular.woff") format("woff"), url("../fonts/Oswaldregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+
+  src: url("../fonts/Oswaldregularitalic.woff") format("woff"), url("../fonts/Oswaldregularitalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Oswaldbold.woff") format("woff"), url("../fonts/Oswaldbold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+
+  src: url("../fonts/Oswaldbolditalic.woff") format("woff"), url("../fonts/Oswaldbolditalic.woff2") format("woff2");
+}
+
+
+body {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+
+  width: 320px;
+
+  border: 2px solid yellow;
+
+  background-color: grey;
+
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  color: @font-color;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  background-color: @white;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.type-button {
+  border: none;
+  background-color: @green;
+
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: @white;
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: @darkgreen;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+}
+
+
+
+
+@media(min-width: 768px) {
+  body {
+    width: 768px;
+  }
+
+
+}
+
+
+
+@media(min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}

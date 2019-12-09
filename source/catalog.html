@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   
-  <body>
+  <body class="page__inside">
     <header class="index__nav">
       <a class="index__link" href="index.html">
         <p class="index__image--icon">
@@ -56,10 +56,10 @@
       <nav class="index__menu">
         <ul class="index__menu--list">
           <li class="index__menu--item">
-            <a class="index__menu--link current" href="index.html">Главная</a>
+            <a class="index__menu--link" href="index.html">Главная</a>
           </li>
           <li class="index__menu--item">
-            <a class="index__menu--link" href="catalog.html">Каталог продукции</a>
+            <a class="index__menu--link current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="index__menu--item">
             <a class="index__menu--link" href="program.html">Подбор программы</a>
@@ -71,169 +71,274 @@
     </header>
 
     <main class="main__conteiner">
-      <section class="program">
-        <div class="program__wrapper">
-          <div class="program__present">
-            <h2 class="program__present--title">Функциональное питание для котов</h2>
-            <p class="program__present--text">Занялся собой? Займись котом!</p>
-            <button class="program__present--button type-button" type="button">Подобрать программу</button>
-          </div>
-          <div class="program__feed-image">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/box-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/box-tablet.png">
-              <img src="img/box-mobile.png" alt="корм" width="280" height="270">
-            </picture>
-          </div>
-          <div class="program__cat-background">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/index-background-desktop.jpg">
-              <img src="img/index-background-mobile.png" alt="зеленный кот" width="320" height="305">
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <section class="kinds">
-        <div class="kinds__block kinds__slim">
-          <div class="kinds__logo">
-            <p class="kinds__logo--back"></p>
-            <p class="kinds__logo--slim">
+      <section class="catalog">
+        <h1 class="catalog__title page__title">Каталог продукции</h1>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--small">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png">
+                <img src="img/catalog-1-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy PRO 500 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">500 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Курица</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">700 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--big">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png">
+                <img src="img/catalog-2-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy PRO 1000 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">1000 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Курица</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">1000 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--small">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png">
+                <img src="img/catalog-3-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy PRO 500 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">500 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Рыба</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">700 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--big">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png">
+                <img src="img/catalog-4-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy PRO 1000 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">1000 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Рыба</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">1000 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--small">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png">
+                <img src="img/catalog-5-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy Slim 500 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">400 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Гречка</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">400 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--big">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png">
+                <img src="img/catalog-6-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy Slim 500 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">1000 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Гречка</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">700 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__image catalog__image--small">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png">
+                <img src="img/catalog-7-mobile.jpg" alt="фото из каталога">
+              </picture>
+            </p>
+            <div class="catalog__data">
+                <h4 class="catalog__data--title">Cat Energy Slim 500 г</h4>
+                <table class="catalog__table">
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Объем</td>
+                    <td class="catalog__table--data">500 г</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Вкус</td>
+                    <td class="catalog__table--data">Рис</td>
+                  </tr>
+                  <tr class="catalog__table--row">
+                    <td class="catalog__table--name">Цена</td>
+                    <td class="catalog__table--data">500 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <button class="catalog__button type-button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__item">
+            <p class="catalog__plus">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 305.28 425.2" style="enable-background:new 0 0 305.28 425.2;" xml:space="preserve">
-              <g>
-                <path d="M239.19,0c-0.55,0-1.11,0-1.66,0c-2.97,1.54-4.74,4.13-6.27,6.99c-2.56,4.79-4.38,9.88-5.74,15.1
-                  c-0.93,3.55-2.85,5.25-6.46,5.87c-10.19,1.77-17.62,7.58-22.81,16.41c-3.24,5.51-5.75,11.35-8.04,17.29
-                  c-6.23,16.14-10.98,32.79-16.79,49.08c-2.77,7.78-2.89,7.67-11.2,7.76c-9.88,0.1-9.19-1.55-9.34,9.41
-                  c-0.05,3.47,1.05,5.22,4.71,5.05c1.13-0.05,2.84-0.57,3.27,0.94c0.36,1.26-1.04,2.14-1.88,3.03c-5.2,5.51-11.71,8.72-18.92,10.66
-                  c-8.28,2.24-16.71,3.99-24.82,6.72c-20.68,6.98-39.85,16.71-54.75,33.2c-9.1,10.06-15.35,21.99-20.67,34.37
-                  C21.63,259.58,14.04,299.49,8,339.78c-2.83,18.87-4.82,37.85-6.36,56.86c-0.77,9.5-1.77,19-1.63,28.56c48.44,0,96.89,0,145.33,0
-                  c0.51-2.02-0.32-3.83-1.01-5.62c-2.96-7.69-9.02-11.69-16.69-13.47c-3.03-0.7-3.41-1.61-1.53-4.01c3.19-4.07,5.29-8.75,6.94-13.61
-                  c7.12-21.07,9.87-43.06,13.31-64.87c2.62-16.65,6.54-32.77,15.16-47.46c6.38-10.86,14.37-20.28,24.4-27.93
-                  c3.62-2.77,3.74-2.77,4.36,1.93c0.42,3.14,0.52,6.33,0.72,9.5c1.26,20.72,1.15,41.44-0.75,62.12c-1.48,16.13-2.07,32.23-0.67,48.41
-                  c1.62,18.64,5.03,36.94,9.75,55.02c19.38,0,38.76,0,58.13,0c-1.41-9.62-9.18-17.65-18.5-19.47c-5.6-1.09-11.02-0.36-16.43,0.89
-                  c-2.61,0.6-3.7,0.13-3.92-2.85c-1.73-23.31-0.55-46.48,4.19-69.34c5.48-26.41,10.63-52.88,13.37-79.71
-                  c1.14-11.15,4.51-21.16,9.92-30.8c5.21-9.29,9.74-18.95,14.85-28.3c4.05-7.4,4.82-14.89,1.81-22.75c-1.19-3.1-2.31-6.24-3.76-9.21
-                  c-4.17-8.58-8.6-17.04-12.71-25.65c-2.13-4.45-1.69-4.93,3.09-5.03c7.11-0.15,7.11-0.15,7.23-7.2c0.02-0.97-0.02-1.94,0-2.91
-                  c0.06-3.02-1.12-4.69-4.43-4.44c-2.2,0.16-4.43,0-6.64,0.04c-3.02,0.06-3.89-1.26-3.15-4.19c2.53-9.99,12.12-18.19,22.4-19.44
-                  c9.76-1.19,19.31,0.19,28.83,1.89c2.83,0.5,4.39-0.11,5.46-2.8c1.74-4.37,3.69-8.65,5.62-12.94c0.8-1.79,0.87-3.36-0.41-5.02
-                  c-13.86-18-28.96-34.63-49.59-45.17c-2.16-1.11-3.36-2.52-3.87-4.93c-1.31-6.23-2.84-12.41-5.53-18.23
-                  C243.89,4.57,242.26,1.71,239.19,0z"/>
-              </g>
+                viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#222222;}
+              </style>
+              <polygon class="st0" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
               </svg>
             </p>
-
-          </div>
-          <h4 class="kinds__title">Похудение</h4>
-          <p class="kinds__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="kinds__link" href="#">Каталог Slim</a>
-          </div>
-
-        <div class="kinds__block kinds__pro">
-          <div class="kinds__logo">
-            <p class="kinds__logo--back"></p>
-            <p class="kinds__logo--pro">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 425.2 179.04" style="enable-background:new 0 0 425.2 179.04;" xml:space="preserve">
-              <g>
-              <path d="M390.73,21.28c3.81-5.91,8.59-10.69,14.38-14.56c3.14-2.09,5.15-2.09,6.82,1.74c2.67,6.11,4.77,12.21,2.86,18.96
-              c-0.69,2.44-0.19,4.53,1.33,6.57c1.77,2.37,3.34,4.88,4.98,7.35c4,6.03,5.63,12.38,2.92,19.47c-1.18,3.1-1.31,6.31-0.64,9.64
-              c0.61,3.05,0.49,6.2,0,9.3c-0.81,5.08-3.44,8.63-8.55,9.98c-4.03,1.06-7.53,2.9-10.15,6.23c-0.68,0.86-1.55,1.53-2.71,1.69
-              c-3.73,0.5-13.23-7.92-13.22-11.73c0-0.62,0.04-1.25,0.05-1.87c0.21-11.26-0.47-12.35-10.8-16.86c-2.17-0.95-4.24-2.02-5.73-3.89
-              c-2.05-2.58-4.54-2.34-7.15-1.25c-2.64,1.11-4.39,2.83-4.03,6.05c0.83,7.59,1.14,15.2,1.11,22.84c0,0.89,0.24,1.93,0.74,2.65
-              c9.8,14.12,13.49,30.73,18.38,46.72c3.73,12.2,10.75,18.84,23.38,19.73c2.01,0.14,4,0.61,5.99,0.98c5.65,1.05,9.03,4.61,10.7,9.92
-              c2.07,6.61,1.04,8.02-5.84,8.07c-6.85,0.05-13.7-0.04-20.56,0.05c-2.77,0.04-5.13-0.5-7.21-2.55c-3.05-3.01-7.04-4.54-10.88-6.24
-              c-4.21-1.87-8.12-4.21-10.63-8.11c-3.51-5.45-8.28-9.68-12.74-14.22c-8.95-9.1-18.21-17.89-26.68-27.48
-              c-6.09-6.9-10.08-14.56-10-23.94c0.02-2.95-0.74-4.18-3.76-2.69c-0.97,0.47-2.07,0.92-3.12,0.94c-8.91,0.14-13.27,5.46-16.43,13.14
-              c-2.77,6.74-6.73,12.98-10.06,19.49c-2.22,4.34-3.66,8.91-3.66,13.86c0.01,7.4,1.75,10.05,8.72,12.54
-              c4.32,1.54,8.48,3.16,10.84,7.5c2.67,4.9,1.89,6.41-3.6,6.47c-7.16,0.07-14.33-0.03-21.49,0.06c-2.79,0.04-4.66-0.93-6.02-3.46
-              c-1.77-3.29-3.88-6.38-5.84-9.56c-3.25-5.28-4.57-10.67-2.37-16.88c1.91-5.4,1.05-11.18,0.25-16.68c-1.19-8.19,0.1-15.5,5.46-21.9
-              c1.75-2.09,1.97-3.24-1.25-3.84c-13.09-2.46-25.46-7.07-37.44-12.82c-0.14-0.07-0.28-0.13-0.43-0.19
-              c-10.11-3.88-12.05-3.01-14.89,7.17c-2.47,8.84-5.03,17.67-6.96,26.64c-2.13,9.91,0.36,19.48,3.54,28.84
-              c1.24,3.63,4.94,3.48,7.78,4.31c6.21,1.82,11.57,4.45,14.28,10.88c2.11,5,1.84,5.67-3.45,5.72c-5.45,0.04-10.92-0.27-16.35,0.09
-              c-5.16,0.35-9.01-1.63-13.22-4.44c-15.23-10.17-19.55-25.36-20.77-42.26c-0.76-10.5-6.29-18.69-13.01-26.28
-              c-1.3-1.48-2.49-2.08-4.39-0.88c-6.63,4.21-14.1,6.53-21.37,9.28c-15.3,5.8-28.57,14.45-38.61,27.61
-              c-3.65,4.79-6.17,10.09-7.06,16.08c-0.84,5.65,0.74,8.04,6.21,9.65c6.05,1.78,8.44,4.71,9.13,10.81c0.29,2.58-0.64,3.91-3.24,3.91
-              c-8.56,0-17.13-0.02-25.69-0.05c-1.89-0.01-3.11-1.13-4.24-2.52c-4.09-5.04-6.01-10.88-6.17-17.27c-0.28-10.93,1-21.75,2.93-32.49
-              c1.19-6.63,4.31-12.07,10.62-15.04c18.71-8.82,28.48-25.36,37.3-42.78c1.78-3.51,0.2-4.05-2.84-3.77
-              c-9.15,0.82-17,4.88-24.32,10.03C82.37,72.34,73.86,80.13,65.44,88c-9.22,8.62-19.7,14.61-32.63,15.51
-              C10.96,105.05-0.01,92.43,1.07,71.44c0.37-7.15,2.78-13.76,7.68-19.16c3.78-4.16,8.38-6.43,14.2-4.75c4.83,1.4,6.08,3.83,4.08,8.36
-              c-0.81,1.84-2.07,3.47-3.03,5.25c-1.11,2.04-2.38,4.05-3.15,6.22c-3.33,9.37,1.16,16.04,11.07,16.88
-              c10.51,0.89,19.05-3.49,26.98-9.7C68.53,67,76.92,58.12,84.4,48.61c11.8-15.01,27.05-23.02,45.62-25.43
-              c7.19-0.93,13.67-4.15,20.55-6.08c13.13-3.68,26.42-5.89,40.07-5.55c6.43,0.16,12.38-0.87,18.53-3.37
-              c15.43-6.29,31.57-6.26,47.76-3.01c12.66,2.55,25.18,5.72,37.74,8.69c7.11,1.68,14.9,1.08,22.15-0.5
-              c14.01-3.05,28.04-5.9,42.41-6.16c9.4-0.17,18.61,1.36,27.27,5.34C392.54,15.31,392.55,15.3,390.73,21.28z"/>
-              </g>
-              </svg>
-            </p>
-          </div>
-          <h4 class="kinds__title">Набор Массы</h4>
-          <p class="kinds__text">Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="kinds__link" href="#">Каталог Pro</a>
-        </div>
-      </section>
-
-      <section class="manual">
-        <h3 class="manual__title">Как это работает</h3>
-        <ul class="manual__list">
-          <li class="manual__item">
-            <p class="manual__item--block leaves"></p>
-            <p class="manual__item--text">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="manual__item">
-            <p class="manual__item--block cont"></p>
-            <p class="manual__item--text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="manual__item">
-            <p class="manual__item--block cutlery"></p>
-            <p class="manual__item--text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="manual__item">
-            <p class="manual__item--block clock"></p>
-            <p class="manual__item--text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <div class="catalog__text">
+              <h4 class="catalog__text--title">Показать еще 100500 товаров</h4>
+              <p class="catalog__text--comment">На самом деле вкусов гораздо больше!</p>
+            </div>
+            <button class="catalog__button catalog__button--last" type="button">Показать все</button>
           </li>
         </ul>
       </section>
 
-      <section class="example">
-        <h3 class="example__title">Живой пример</h3>
-        <div class="example__wrapper">
-          <div class="example__description-block">
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      <section class="add">
+        <h3 class="add__title">Дополнительные товары</h3>
+        <div class="add__wrapper">
+          <ul class="add__list">
+            <li class="add__item">
+              <h5 class="add__item--title">Сахарозаменитель</h5>
+              <p class="add__item--text">1 упаковка (100 г)</p>
+              <p class="add__item--data">100 Р</p>
+              <button class="add__item--button type-button" type="submit">Заказать</button>
+            </li>
+            <li class="add__item">
+              <h5 class="add__item--title">Питьевая вода</h5>
+              <p class="add__item--text">5 литров (50 г)</p>
+              <p class="add__item--data">100 Р</p>
+              <button class="add__item--button type-button" type="submit">Заказать</button>
+            </li>
+            <li class="add__item">
+              <h5 class="add__item--title">Молоко</h5>
+              <p class="add__item--text">1 литр</p>
+              <p class="add__item--data">100 Р</p>
+              <button class="add__item--button type-button" type="submit">Заказать</button>
+            </li>
+            <li class="add__item">
+              <h5 class="add__item--title">Витамины</h5>
+              <p class="add__item--text">1 упаковка (30 г)</p>
+              <p class="add__item--data">300 Р</p>
+              <button class="add__item--button type-button" type="submit">Заказать</button>
+            </li>
+          </ul>
+
+          <div class="add__image--wrapper">
+            <p class="add__image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/gift-photo-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/gift-photo-tablet.jpg">
+                <img src="img/gift-photo-mobile.jpg" alt="Фото зеленного кота" width="280" height="289">
+              </picture>
             </p>
-            <div class="example__data--wrapper">
-              <p class="example__data data--weight">5 кг</p>
-              <p class="example__data data--term">60 дней</p>
-            </div>
-            <div class="example__price">
-              <p class="example__price--text">Затраты на питание:</p>
-              <p class="example__price--value">15 000 руб.</p>
-            </div>
-          </div>
-          <div class="example__image--wrapper">
-            <div class="example__image">
-              <p class="example__image--before">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/before-tab-desk.png">
-                  <img src="img/before-mobile.png" alt="Котик ДО" width="311" height="232"> 
-                </picture>
+            <div class="add__text--wrapper">
+              <p class="add__text--logo">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 55.48 59.95" style="enable-background:new 0 0 55.48 59.95;" xml:space="preserve">
+                <path d="M52.35,12.17h-6.96c0.46-0.67,0.83-1.41,1.07-2.21c0.59-1.98,0.37-4.08-0.61-5.9c-0.98-1.82-2.62-3.15-4.6-3.74
+                 c-1.98-0.59-4.08-0.37-5.9,0.61c-3.61,1.95-6.17,6.11-7.6,9.01c-1.43-2.9-3.99-7.06-7.6-9.01c-3.76-2.03-8.47-0.63-10.5,3.13
+                 C8.2,6.72,8.49,9.84,10.1,12.17H3.13C1.41,12.17,0,13.58,0,15.3v9.38c0,1.73,1.41,3.13,3.13,3.13h0.83v26.11
+                 c0,3.33,2.71,6.03,6.03,6.03h35.49c3.32,0,6.03-2.7,6.03-6.03V27.82h0.83c1.73,0,3.13-1.4,3.13-3.13V15.3
+                 C55.48,13.58,54.07,12.17,52.35,12.17z M36.48,3.05c1.26-0.68,2.7-0.83,4.07-0.42c1.37,0.41,2.5,1.32,3.18,2.58
+                 c0.68,1.26,0.83,2.7,0.42,4.07c-0.36,1.2-1.13,2.2-2.16,2.89H29.35C30.48,9.64,32.96,4.96,36.48,3.05z M11.75,5.21
+                 c1.4-2.59,4.65-3.56,7.25-2.16c3.52,1.91,6,6.6,7.13,9.12H13.49C11.23,10.65,10.43,7.65,11.75,5.21z M26.54,27.82v13.67H6.36V27.82
+                 H26.54z M6.36,53.92V43.89h20.18v13.67H9.99C7.99,57.55,6.36,55.93,6.36,53.92z M45.48,57.55H28.94V43.89h20.17v10.04
+                 C49.11,55.93,47.49,57.55,45.48,57.55z M49.11,41.49H28.94V27.82h20.17V41.49z M53.08,24.68c0,0.4-0.33,0.73-0.73,0.73h-2.03
+                 c0,0,0,0,0,0s0,0,0,0H27.74c0,0,0,0,0,0s0,0,0,0H5.17c0,0,0,0,0,0s0,0,0,0H3.13c-0.4,0-0.73-0.33-0.73-0.73V15.3
+                 c0-0.4,0.34-0.73,0.73-0.73h49.21c0.4,0,0.73,0.33,0.73,0.73V24.68z"/>
+                </svg>
               </p>
-              <p class="example__image--after">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/after-tab-desk.png">
-                  <img src="img/after-mobile.png" alt="Котик ПОСЛЕ" width="251" height="240"> 
-                </picture>
+              <p class="add__text">
+                Закажите все <br> и получите чехол для кота в подарок!
               </p>
             </div>
-            <div class="example__buttons">
-              <button class="example__buttons--before">Было</button>
-              <input class="example__buttons--range" type="range">
-              <button class="example__buttons--after">Стало</button>
-            </div>
+
           </div>
         </div>
       </section>
+
 
       <section class="contacts">
         <div class="contacts__adress">

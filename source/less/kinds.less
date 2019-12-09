@@ -1,0 +1,302 @@
+@green: #68b738;
+@lightgrey: #f2f2f2;
+@grey: #444444;
+@border-grey: #d9d9d9;
+@black: #000000;
+@white: #ffffff;
+@dashed: 1px dashed red;
+
+
+.kinds {
+  padding: 0 20px;
+
+  background-color: @white;
+}
+
+.kinds__block {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+
+  margin: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background-color: @lightgrey;
+}
+
+.kinds__logo {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  width: 50px;
+  height: 50px;
+}
+
+.kinds__logo--back {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: @green;
+  border-radius: 50%;
+}
+
+.kinds__logo--slim,
+.kinds__logo--pro {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.kinds__logo--slim {
+  top: -2px;
+  left: 7px;
+
+  width: 35px;
+  height: 49px;
+}
+
+.kinds__logo--pro {
+  top: calc(50% - 14px);
+  left: -10px;
+
+  width: 67px;
+  height: 28px;
+}
+
+.kinds__title {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.kinds__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: @grey;
+  
+  border-bottom: 1px solid @border-grey;
+}
+
+.kinds__link {
+  position: relative;
+  padding-right: 35px;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+  }
+
+  &::before {
+    top: 6px;
+    right: 2px;
+
+    width: 22px;
+    height: 3px;
+
+    background-color: #3e4242;
+  }
+
+  &::after {
+    right: -5px;
+    top: 2px;
+
+    border: 5.5px solid transparent;
+    border-left-color: #3e4242;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.kinds__link:hover {
+  padding-right: 45px;
+
+  &::before {
+    width: 33px;
+  }
+}
+
+
+
+@media(min-width: 768px) {
+  .kinds {
+    padding: 0 30px;
+  }
+
+  .kinds__block {
+    flex-direction: column;
+
+    padding: 80px 60px 60px 50px;
+
+    margin-bottom: 30px;
+
+    min-height: 210px;
+    max-height: 230px;
+  }
+
+  .kinds__logo {
+    order: 1;
+    padding-top: 10px;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .kinds__logo--slim {
+    top: 0;
+    left: calc(50% - 70px);
+    
+    width: 140px;
+    height: 194px;
+  }
+
+  .kinds__logo--pro {
+    top: calc(50% - 56px);
+    left: -35px;
+
+    width: 268px;
+    height: 112px;
+  }
+
+  .kinds__title {
+    margin-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    width: 380px;
+  }
+
+  .kinds__text {
+    margin-bottom: 50px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 380px;
+
+    border: none;
+  }
+
+  .kinds__link {
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    width: 150px;
+
+    &::before {
+      top: 7px;
+    }
+
+    &::after {
+      top: 3px;
+    }
+  }
+
+  .kinds__link:hover {
+    padding-right: 10px;
+  }
+}
+
+
+
+@media(min-width: 1440px) {
+  .kinds {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding: 0 110px;
+  }
+
+  .kinds__block {
+    position: relative;
+    justify-content: flex-start;
+
+    padding: 45px 50px 60px;
+    margin-bottom: 80px;
+
+    width: 470px;
+    min-height: 270px;
+    max-height: 100%;
+  }
+
+  .kinds__logo {
+    position: absolute;
+    
+    top: 45px;
+    left: 50px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  .kinds__logo--slim {
+    top: -5px;
+    left: calc(50% - 35px);
+
+    width: 70px;
+    height: 97px;
+  }
+
+  .kinds__logo--pro {
+    top: calc(50% - 28px);
+    left: -18px;
+
+    width: 134px;
+    height: 56px;
+  }
+
+  .kinds__title {
+    margin-left: 160px;
+    margin-bottom: 45px;
+    
+    font-size: 36px;
+    line-height: 100px;
+
+    width: auto;
+
+    height: 100px;
+  }
+
+  .kinds__text {
+    margin-bottom: 30px;
+
+    width: 100%;
+  }
+
+  .kinds__link {
+    margin-top: auto;
+  }
+}

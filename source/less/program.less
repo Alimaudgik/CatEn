@@ -1,0 +1,167 @@
+@green: #68b738;
+@darkgreen: ;
+@lightgrey: #f2f2f2;
+@grey: #444444;
+@black: #000000;
+@white: #ffffff;
+@dashed: 1px dashed red;
+
+
+.program {
+  background-color: @white;
+}
+
+.program__wrapper {
+  position: relative;
+  
+  padding: 0 20px;
+  padding-top: 30px;
+}
+
+.program__present {
+  position: relative;
+  text-align: center;
+  color: @white;
+
+  z-index: 300;
+}
+
+.program__present--title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.program__present--text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 300px;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.program__present--button {
+  margin-bottom: 20px;
+
+  width: 100%;
+  height: 52px;
+}
+
+.program__feed-image {
+  position: absolute;
+  top: 170px;
+  left: calc(50% - 140px);
+  
+  width: 280px;
+  height: 270px;
+
+  z-index: 200;
+}
+
+.program__cat-background {
+  position: absolute;
+
+  top: 0;
+  right: calc(50% - 160px);
+
+  width: 320px;
+  height: 305px;
+
+  background-color: @green;
+
+  z-index: 100;
+}
+
+
+
+@media(min-width: 768px) {
+  .program__wrapper {
+    padding: 0 120px;
+    padding-top: 65px;
+  }
+
+  .program__present {
+    text-align: left;
+    color: @black;
+
+    width: 430px;
+  }
+
+  .program__present--title {
+    margin-bottom: 35px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program__present--text {
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 20px
+  }
+
+  .program__present--button {
+    margin-bottom: 530px;
+    
+    font-size: 20px;
+    width: 245px;
+  }
+
+  .program__feed-image {
+    top: 258px;
+    left: calc(50% - 355px);
+
+    width: 709px;
+    height: 609px;
+  }
+
+  .program__cat-background {
+    display: none;
+  }
+}
+
+
+
+@media(min-width: 1440px) {
+  .program__wrapper {
+    padding: 0 110px;
+    padding-top: 230px
+  }
+
+  .program__present {
+    margin-left: 80px;
+  }
+
+  .program__present--text {
+    margin-bottom: 55px;
+  }
+
+  .program__present--button {
+    margin-bottom: 268px;
+  }
+
+  .program__feed-image {
+    top: 140px;
+    left: 560px;
+
+    width: 552px;
+    height: 499px;
+  }
+
+  .program__cat-background {
+    display: block;
+
+    top: 0;
+    right: 0;
+
+    width: 720px;
+    height: 696px;
+  }
+}
