@@ -78,7 +78,8 @@
   &::placeholder {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 45px;
+    text-transform: uppercase;
 
     color: @grey;
   }
@@ -100,13 +101,13 @@
 
 .target {
   padding: 20px;
+  margin-bottom: 60px;
 
   border: 1px solid #ededed;
 }
 
 
-.target__list,
-.checklist__list {
+.target__list {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -116,8 +117,7 @@
   padding: 0;
 }
 
-.target__item,
-.checklist__item {
+.target__item {
   position: relative;
 
   margin-bottom: 15px;
@@ -184,22 +184,115 @@ input[type=checkbox]:active + label {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @media(min-width: 768px) {
+  .form-header {
+    padding: 0 30px;
+  }
 
+  .form-header__title {
+    margin-bottom: 55px;
+  }
+
+  .form-header__text {
+    margin: 0;
+    padding-left: 40px;
+    margin-bottom: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 345px;
+  }
+
+  .profile__wrapper {
+    padding: 0 67px 0 70px;
+  }
+
+  .profile {
+    padding: 0;
+    margin-bottom: 70px;
+  }
+
+  .profile__item,
+  .user-data__item {
+    margin-bottom: 20px;
+    height: 52px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .main__conteiner .label-name {
+    font-size: 20px;
+    line-height: 52px;
+  }
+
+  .main__conteiner .input-data {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 50px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 52px;
+    }
+
+    &:focus {
+      line-height: 50px;
+    }
+  }
+
+  .target {
+    padding: 25px 35px;
+  }
+
+  input[type=radio] + label,
+  input[type=checkbox] + label {
+    padding-left: 60px;
+
+    font-size: 20px;
+    line-height: 40px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .target__input:checked + .target__label::after {
+    top: 11px;
+    left: 11px;
+
+    width: 18px;
+    height: 18px;
+  }
 }
 
 
 
 @media(min-width: 1440px) {
+  .form-header,
+  .profile__wrapper {
+    padding: 0 110px;
+  }
 
+  .form-header__text {
+    padding: 0;
+  }
+
+  .profile__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+  }
+
+  .profile,
+  .target {
+    margin: 0;
+    width: 570px;
+
+    box-sizing: border-box;
+  }
 }

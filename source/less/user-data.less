@@ -96,15 +96,75 @@
 
 
 
-
-
 @media(min-width: 768px) {
+  .user-data__wrapper {
+    padding: 0;
+  }
 
+  .inside__title {
+    margin-bottom: 70px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      margin-left: 45px;
+    }
+
+    &::before {
+      content: '';
+
+      margin-right: 40px;
+      width: 30px;
+      height: 3px;
+      background-color: @green;
+    } 
+  }
+
+  .user-data__title::after,
+  .user-data__title::before {
+    margin-top: 20px;
+    margin-bottom: auto;
+  }
+
+  .user-data__list {
+    padding: 0 67px 0 70px;
+    margin-bottom: 70px;
+  }
+
+  .user-email-logo {
+    bottom: 19px;
+  }
+
+  .user-phone-logo {
+    bottom: 16px;
+  }
 }
 
 
 
 @media(min-width: 1440px) {
+  .inside__title {
+    &::before {
+      width: 70px;
+    }
+
+    & br {
+      display: none;
+    }
+  }
+
+  .user-data__list {
+    padding: 0 110px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user-data__item {
+    width: 550px;
+  }
 
 }
 
