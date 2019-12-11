@@ -54,6 +54,7 @@
   background: none;
   font-size: 0;
   width: 24px;
+  cursor: pointer;
 }
 
 .index__menu--open {
@@ -76,7 +77,6 @@
 }
 
 .index__menu--close {
-  display: none;
 
   height: 24px;
 
@@ -85,8 +85,8 @@
     content: '';
 
     position: absolute;
-    left: 12px;
-    top: 0;
+    left: 11px;
+    top: -3px;
     width: 2px;
     height: 100%;
 
@@ -102,10 +102,22 @@
   }
 }
 
-.index__menu {
+.menu-off {
   display: none;
   margin: 0;
   padding: 0;
+}
+
+.menu-on {
+  display: block;
+}
+
+.button-on {
+  display: block;
+}
+
+.button-off {
+  display: none;
 }
 
 .index__menu--list {
